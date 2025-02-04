@@ -1,0 +1,55 @@
+@import "./scss/bootstrap";
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1 0 auto;
+}
+/* App.scss */
+html, body {
+    height: 100%; /* Ensure full height of the page */
+    margin: 0;    /* Remove default margin */
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the app takes full viewport height */
+  }
+  
+  main {
+    flex: 1; /* This will push the footer to the bottom if content is short */
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* This pushes the footer to the bottom */
+  }
+  
+
+
+
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      padding: 10px;
+  
+      .header-right .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  
+    .home-container .content .main-name {
+      font-size: 80px;
+    }
+  
+    .home-container .content .sub-name {
+      font-size: 40px;
+    }
+  }

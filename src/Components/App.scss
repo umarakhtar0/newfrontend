@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); /* Importing a clean, elegant font */
+
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  background-image: url('../assets/images/i.jpeg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+
+    .main-name {
+      font-family: 'Montserrat', sans-serif;  /* Elegant font */
+      font-size: 8vw;  /* Adjust text size based on screen size */
+      font-weight: 700; /* Bold weight */
+      text-transform: uppercase;
+      margin: 0;
+      color: transparent;  /* Set text color to transparent for gradient */
+      background: linear-gradient(135deg, #2d3436, #000000); /* Blackish gradient */
+      background-clip: text;  /* Apply gradient to text */
+      -webkit-background-clip: text;  /* Safari compatibility */
+      letter-spacing: 3px;  /* Slightly tighter letter spacing for elegance */
+      
+      /* Border around text */
+      -webkit-text-stroke: 2px #fff; /* Adds white border around text */
+      text-stroke: 2px #fff; /* Adds white border around text */
+      
+      /* Subtle shadow for depth */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add depth with soft shadow */
+
+      /* Smooth transition for hover effects */
+      transition: all 0.3s ease;
+    }
+
+    .sub-name {
+      font-family: 'Montserrat', sans-serif;  /* Same font for consistency */
+      font-size: 4vw;
+      font-style: italic;
+      margin: 10px 0;
+      color: #f39c12;  /* Accent color */
+    }
+
+    .profession {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2vw;
+      color: #ddd;
+    }
+  }
+}
+
+/* Hover effect for 'UMAR' - border color change */
+.main-name:hover {
+  -webkit-text-stroke: 2px #f39c12; /* Accent border color */
+  text-stroke: 2px #f39c12; /* Accent border color */
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* More intense shadow on hover */
+  transform: scale(1.05);  /* Slight scale-up on hover */
+}
+
