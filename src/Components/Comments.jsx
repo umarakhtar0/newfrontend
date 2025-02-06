@@ -392,67 +392,80 @@
 
 // export default CommentsSlider;
 
-import './event.scss'
-import React from 'react';
-import Slider from 'react-slick';
-import { FaStar } from 'react-icons/fa';
+// import './event.scss'
+// import React from 'react';
+// import Slider from 'react-slick';
+// import { FaStar } from 'react-icons/fa';
 
 
-const feedbacks = [
-  {
-    id: 1,
-    text: "In Sargodha, Dunya Consultants provides great consultancy for students.",
-    author: "Anonymous",
-    image: "path/to/student1.jpg",
-    rating: 5,
-    details: "Detailed information about the feedback.",
-  },
-  {
-    id: 2,
-    text: "Best services. Especially M. Dabeer Raza from Sargodha.",
-    author: "Anonymous",
-    image: "path/to/student2.jpg",
-    rating: 4,
-    details: "Detailed information about the feedback.",
-  },
-  // Add more feedback objects as needed
-];
+// const feedbacks = [
+//   {
+//     id: 1,
+//     text: "In Sargodha, Dunya Consultants provides great consultancy for students.",
+//     author: "Anonymous",
+//     image: "path/to/student1.jpg",
+//     rating: 5,
+//     details: "Detailed information about the feedback.",
+//   },
+//   {
+//     id: 2,
+//     text: "Best services. Especially M. Dabeer Raza from Sargodha.",
+//     author: "Anonymous",
+//     image: "path/to/student2.jpg",
+//     rating: 4,
+//     details: "Detailed information about the feedback.",
+//   },
+//   // Add more feedback objects as needed
+// ];
 
-const FeedbackCarousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: true,
-  };
+// const FeedbackCarousel = () => {
+//   const settings = {
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 2,
+//     slidesToScroll: 2,
+//     autoplay: true,
+//     autoplaySpeed: 5000,
+//     pauseOnHover: true,
+//   };
 
+//   return (
+//     <div className="feedback-carousel">
+//       <Slider {...settings}>
+//         {feedbacks.map((feedback) => (
+//           <div key={feedback.id} className="feedback-item">
+//             <div className="feedback-content">
+//               <p>{feedback.text}</p>
+//               <p><strong>- {feedback.author}</strong></p>
+//               <div className="feedback-rating">
+//                 {[...Array(feedback.rating)].map((_, index) => (
+//                   <FaStar key={index} className="star-icon" />
+//                 ))}
+//               </div>
+//               <p className="feedback-details">{feedback.details}</p>
+//             </div>
+//             <div className="feedback-image">
+//               <img src={feedback.image} alt={feedback.author} />
+//             </div>
+//           </div>
+//         ))}
+//       </Slider>
+//     </div>
+//   );
+// };
+
+// export default FeedbackCarousel;
+
+
+
+
+import React from 'react'
+
+export default function Comments() {
   return (
-    <div className="feedback-carousel">
-      <Slider {...settings}>
-        {feedbacks.map((feedback) => (
-          <div key={feedback.id} className="feedback-item">
-            <div className="feedback-content">
-              <p>{feedback.text}</p>
-              <p><strong>- {feedback.author}</strong></p>
-              <div className="feedback-rating">
-                {[...Array(feedback.rating)].map((_, index) => (
-                  <FaStar key={index} className="star-icon" />
-                ))}
-              </div>
-              <p className="feedback-details">{feedback.details}</p>
-            </div>
-            <div className="feedback-image">
-              <img src={feedback.image} alt={feedback.author} />
-            </div>
-          </div>
-        ))}
-      </Slider>
+    <div>
+      
     </div>
-  );
-};
-
-export default FeedbackCarousel;
+  )
+}

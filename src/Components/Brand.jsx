@@ -69,31 +69,43 @@
 
 
 
-import React from "react";
-import "./Brand.scss";
-import image from "../assets/+92 320 7482554.png"; // Update the image path accordingly
+// import React from "react";
+// import "./Brand.scss";
+// import image from "../assets/+92 320 7482554.png"; // Update the image path accordingly
 
-const WhyChoose = () => {
+// const WhyChoose = () => {
+//   return (
+//     <div className="why-choose-container">
+//       <div className="why-choose-content">
+//         <h5>Why Choose</h5>
+//         <h2>Abroad Mentors Consultants</h2>
+//         <p>
+//           We offer free consultation to help students in planning their study abroad journey.
+//           Our abroad education consultants provide guidance on selecting the right university
+//           and preparing your student visa application.
+//         </p>
+//         <p>
+//           Our experts provide personalized support to make your study overseas experience stress-free
+//           and successful. We understand your goals and needs and give the best advice according to your situation.
+//         </p>
+//       </div>
+//       <div className="why-choose-image">
+//         <img src={image} alt="Consulting" />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default WhyChoose;
+
+
+
+import React from 'react'
+
+export default function Brand() {
   return (
-    <div className="why-choose-container">
-      <div className="why-choose-content">
-        <h5>Why Choose</h5>
-        <h2>Abroad Mentors Consultants</h2>
-        <p>
-          We offer free consultation to help students in planning their study abroad journey.
-          Our abroad education consultants provide guidance on selecting the right university
-          and preparing your student visa application.
-        </p>
-        <p>
-          Our experts provide personalized support to make your study overseas experience stress-free
-          and successful. We understand your goals and needs and give the best advice according to your situation.
-        </p>
-      </div>
-      <div className="why-choose-image">
-        <img src={image} alt="Consulting" />
-      </div>
+    <div>
+      
     </div>
-  );
-};
-
-export default WhyChoose;
+  )
+}

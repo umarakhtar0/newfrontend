@@ -1198,21 +1198,54 @@ const PartnerRegistration = () => {
     setFiles([...e.target.files]);  // Store selected files in an array
   };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   const formDataWithFiles = new FormData();
+  //   Object.entries(formData).forEach(([key, value]) => {
+  //     formDataWithFiles.append(key, value);
+  //   });
+
+  //   // Append all selected files with 'files' name to match backend
+  //   files.forEach((file) => {
+  //     formDataWithFiles.append("files", file);
+  //   });
+
+  //   try {
+  //     await axios.post("https://newbackend-9329.vercel.app//register", formDataWithFiles, {
+  //       headers: { "Content-Type": "multipart/form-data" },
+  //     });
+  //     toast.success("Registration successfullllll!");
+  //     setFormData({
+  //       organizationName: "",
+  //       legalEntityName: "",
+  //       firstName: "",
+  //       lastName: "",
+  //       role: "",
+  //       email: "",
+  //       mobileNumber: "",
+  //       city: "",  // Reset the city field too
+  //     });
+  //     setFiles([]);  // Clear file selection after successful submit
+  //   } catch (error) {
+  //     toast.error("Failed to register. Try again.");
+  //   }
+  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     const formDataWithFiles = new FormData();
     Object.entries(formData).forEach(([key, value]) => {
       formDataWithFiles.append(key, value);
     });
-
+  
     // Append all selected files with 'files' name to match backend
     files.forEach((file) => {
       formDataWithFiles.append("files", file);
     });
-
+  
     try {
-      await axios.post("http://localhost:5001/register", formDataWithFiles, {
+      await axios.post("https://newbackend-9329.vercel.app/register", formDataWithFiles, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       toast.success("Registration successful!");
@@ -1231,6 +1264,7 @@ const PartnerRegistration = () => {
       toast.error("Failed to register. Try again.");
     }
   };
+  
 
   return (
     <div className="partner-registration-container">
