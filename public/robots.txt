@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://umarakhtar.dev/sitemap.xml
+Sitemap: https://abroad-mentors-form.netlify.app/sitemap.xml
